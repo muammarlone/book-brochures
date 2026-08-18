@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genesys Purecloud Architect Guide — Muammar Lone</title>
+<meta name="description" content="The practitioner's handbook for Genesys Architect — flow design, telephony architecture, security hardening, and production-grade reliability patterns.">
+<link rel="stylesheet" href="style.css">
+<style>
+:root {
+  --accent: #5521B5;
+  --accent-bg: #EDE9FE;
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="site-nav-brand" href="index.html">← <strong>Muammar Lone</strong> — All Books</a>
+  <a class="site-nav-link" href="https://www.amazon.com/Genesys-Purecloud-Architect-Guide-implementation/dp/B0DNQP9DY9" target="_blank" rel="noopener">Buy on Amazon ↗</a>
+</nav>
+
+<!-- HERO -->
+<div class="book-hero">
+  <div class="book-spine-art" style="background: linear-gradient(180deg, #3B1884 0%, #5521B5 50%, #6D2FC7 100%); min-height:340px;">
+    <div class="book-spine-text">Genesys Purecloud Architect Guide · Muammar Lone</div>
+  </div>
+  <div class="book-hero-text">
+    <div class="book-eyebrow">Genesys Purecloud Made Simpler and Easy · Vol. 3</div>
+    <h1>Genesys Purecloud <em>Architect Guide</em></h1>
+    <p class="book-hero-sub">The practitioner's handbook for Genesys Architect — covering flow design, telephony architecture, security hardening, and production-grade reliability patterns that text-only study cannot teach. This is the book that bridges certification knowledge with operational reality.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Genesys Architect</span>
+      <span class="hero-tag">Flow Design</span>
+      <span class="hero-tag">Telephony Architecture</span>
+      <span class="hero-tag">Security Hardening</span>
+    </div>
+  </div>
+</div>
+
+<!-- KEY INSIGHTS -->
+<section class="section">
+  <div class="ed-rule">
+    <div class="ed-rule-line"></div>
+    <div class="ed-rule-label">What You Will Learn</div>
+    <div class="ed-rule-line"></div>
+  </div>
+  <div class="section-title" style="margin-top:8px; margin-bottom:8px;">What Every Genesys Architect Needs to Know Before Going Live</div>
+  <p class="section-sub">The Architect exam tests platform knowledge. Production tests judgment. This book develops both.</p>
+
+  <div class="insights-grid">
+    <div class="insight-card">
+      <div class="insight-number">Insight 01</div>
+      <div class="insight-heading">Flow Design Is Not Drag-and-Drop</div>
+      <div class="insight-body">The Genesys Architect canvas is deceptively visual. The real discipline is in how you handle error paths, manage flow variables across session state, and design fallback logic that does not abandon a caller when a data action fails. This book treats flow design as software engineering.</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-number">Insight 02</div>
+      <div class="insight-heading">Telephony Architecture Is the Invisible Foundation</div>
+      <div class="insight-body">Most certification candidates under-prepare for telephony. In production, Edge appliance configuration, BYOC trunk design, and SRTP enforcement determine whether the platform works reliably at scale. This book makes telephony architecture concrete and testable.</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-number">Insight 03</div>
+      <div class="insight-heading">Reliability Is Designed, Not Hoped For</div>
+      <div class="insight-body">The difference between a Genesys deployment that runs stably for three years and one that requires constant firefighting is a set of design decisions made in the first eight weeks. This book maps those decisions — in-queue flow behavior, flow version management, capacity planning — with the precision they require.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER PREVIEW -->
+<div class="section-accent">
+  <div class="section-accent-inner">
+    <div class="ed-rule">
+      <div class="ed-rule-line" style="background: rgba(85,33,181,.2);"></div>
+      <div class="ed-rule-label">Chapter Preview</div>
+      <div class="ed-rule-line" style="background: rgba(85,33,181,.2);"></div>
+    </div>
+    <div class="section-title" style="margin-top:8px; margin-bottom:28px;">From Chapter 1: The Architect's Canvas</div>
+    <div class="chapter-preview">
+      <div class="chapter-preview-header">
+        <span class="chapter-label" style="color:#5521B5;">Chapter 1 — Free Preview</span>
+        <span class="chapter-title-sm">The Architect's Canvas</span>
+      </div>
+      <div class="chapter-body">
+        <p>When a new Genesys Architect user opens the canvas for the first time, the interface presents an invitation: drag an action, connect it to another, publish. The simplicity of that interaction is one of Genesys Cloud CX's genuine design achievements. <strong>It is also the first source of production failures among architects who mistake visual accessibility for engineering simplicity.</strong></p>
+        <p>A flow is a program. It has inputs, state, branching logic, error conditions, and outputs. It runs in real time, at scale, on calls that belong to real customers who are already waiting. A poorly designed flow does not fail gracefully — it fails in the one scenario you did not design for, at the worst possible moment, in a way that your monitoring will not catch until a supervisor notices the abandoned call spike.</p>
+        <p>The discipline of flow design begins not with the canvas but with a question: <em>what is every possible state this flow can be in, and what happens in each of them?</em> Architects who answer that question before touching the canvas build systems that work in production. Architects who discover the answer during production troubleshooting build different kinds of experience entirely.</p>
+      </div>
+      <div class="chapter-fade"></div>
+      <div class="chapter-cta-line">Enter your email below to receive the complete Chapter 1 — free.</div>
+    </div>
+  </div>
+</div>
+
+<!-- LEAD MAGNET -->
+<div class="lead-magnet" style="background: var(--accent);">
+  <div class="lead-magnet-inner">
+    <h2>Get Chapter 1 Free</h2>
+    <p>Receive the complete opening chapter of <em>Genesys Purecloud Architect Guide</em> — the architect's canvas, explained with full production context.</p>
+    <form action="https://formsubmit.co/muammarlone@gmail.com" method="POST" class="lead-form">
+      <input type="hidden" name="_subject" value="Free Chapter Request — Book 3: Architect Guide">
+      <input type="hidden" name="_next" value="https://muammarlone.github.io/book-brochures/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="book" value="Vol. 3 — Genesys Purecloud Architect Guide">
+      <input class="lead-input" type="text" name="name" placeholder="Your name (optional)">
+      <input class="lead-input" type="email" name="email" placeholder="Your email address" required>
+      <button class="lead-btn" type="submit" style="color:#5521B5;">Send Me Chapter 1 →</button>
+    </form>
+    <p class="lead-fine">No spam. One email with your chapter. Unsubscribe any time.</p>
+  </div>
+</div>
+
+<!-- AUTHOR -->
+<div class="author-section">
+  <div class="author-avatar" style="background: var(--accent);">✍️</div>
+  <div>
+    <div class="author-meta-name">Muammar Lone</div>
+    <div class="author-meta-title">MBA · MCS · PMP® · Principal Genesys Cloud CX Architect</div>
+    <div class="author-meta-bio">Volume 3 in the series goes deepest on the technical craft of Genesys implementation. Muammar draws on real deployment experience — including the failure modes that certification courses do not cover — to produce a handbook that practitioners can use on the job from day one.</div>
+    <div class="author-creds">
+      <span class="cred">MBA</span><span class="cred">MCS</span><span class="cred">PMP®</span>
+      <span class="cred">GE Alumni</span><span class="cred">Cognizant Alumni</span>
+    </div>
+  </div>
+</div>
+
+<!-- OTHER BOOKS -->
+<div class="other-books">
+  <div class="other-books-inner">
+    <div class="ed-rule-label" style="color:rgba(255,255,255,.3); font-size:10px; text-transform:uppercase; letter-spacing:2px; margin-bottom:4px;">Also by Muammar Lone</div>
+    <div class="other-books-grid">
+      <a class="other-book-card" href="book-1-cx-foundation.html"><div class="other-book-vol">Vol. 1</div><div class="other-book-title">Foundation for CX Technology Future Oriented</div></a>
+      <a class="other-book-card" href="book-2-cx-architecture.html"><div class="other-book-vol">Vol. 2</div><div class="other-book-title">CX Strategic Architecture &amp; Implementation Guide</div></a>
+      <a class="other-book-card" href="book-4-digital-breadcrumb.html"><div class="other-book-vol">Vol. 4</div><div class="other-book-title">The Digital Breadcrumb Revolution</div></a>
+      <a class="other-book-card" href="book-5-decoding-language.html"><div class="other-book-vol">NLP</div><div class="other-book-title">Decoding Language: Principles &amp; Future of NLP</div></a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  © 2025 Muammar Lone ·
+  <a href="https://www.amazon.com/Genesys-Purecloud-Architect-Guide-implementation/dp/B0DNQP9DY9" target="_blank" rel="noopener">Buy on Amazon</a> ·
+  <a href="index.html">All Books</a>
+</footer>
+</body>
+</html>

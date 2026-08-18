@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muammar Lone — Author</title>
+<meta name="description" content="Books on Genesys Cloud CX, contact center architecture, customer journey analytics, and NLP by Muammar Lone.">
+<link rel="stylesheet" href="style.css">
+<style>
+:root { --accent: #006E7C; }
+
+/* INDEX-SPECIFIC */
+.hub-hero {
+  background: var(--dark);
+  padding: 96px 32px 80px;
+  text-align: center;
+}
+.hub-eyebrow {
+  font-size: 11px; font-weight: 700; font-family: var(--font-body);
+  text-transform: uppercase; letter-spacing: 2.5px;
+  color: var(--accent); margin-bottom: 20px;
+}
+.hub-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: bold; color: #fff; line-height: 1.1;
+  margin-bottom: 16px; text-wrap: balance;
+}
+.hub-hero h1 em { font-style: italic; color: rgba(255,255,255,.6); }
+.hub-hero-sub {
+  font-size: 17px; color: rgba(255,255,255,.5);
+  max-width: 520px; margin: 0 auto 40px; line-height: 1.65;
+}
+.hub-stats {
+  display: flex; gap: 48px; justify-content: center; flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 36px; margin-top: 0;
+}
+.hub-stat-val {
+  font-family: var(--font-display);
+  font-size: 36px; font-weight: bold; color: #fff; line-height: 1;
+  margin-bottom: 6px; font-variant-numeric: tabular-nums;
+}
+.hub-stat-lbl { font-size: 12px; color: rgba(255,255,255,.4); letter-spacing: .8px; text-transform: uppercase; }
+
+/* BOOK GRID */
+.books-section {
+  padding: 80px 32px;
+  max-width: 980px; margin: 0 auto;
+}
+.books-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.book-hub-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--sh);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  text-decoration: none;
+  transition: box-shadow .18s, transform .18s;
+}
+.book-hub-card:hover { box-shadow: var(--sh-md); transform: translateY(-2px); }
+.bhc-accent { height: 4px; }
+.bhc-body { padding: 24px; flex: 1; }
+.bhc-vol {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--faint); margin-bottom: 8px; font-family: var(--font-body);
+}
+.bhc-title {
+  font-family: var(--font-display);
+  font-size: 17px; font-weight: bold; line-height: 1.3; color: var(--text);
+  margin-bottom: 10px; text-wrap: balance;
+}
+.bhc-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.bhc-footer {
+  padding: 0 24px 20px;
+  display: flex; gap: 10px; align-items: center;
+}
+.bhc-btn {
+  font-size: 12px; font-weight: 700; font-family: var(--font-body);
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 8px 16px; border-radius: var(--radius);
+  color: #fff; text-decoration: none;
+  transition: opacity .12s;
+}
+.bhc-btn:hover { opacity: .85; }
+.bhc-amazon {
+  font-size: 12px; color: var(--faint); text-decoration: none;
+  border-bottom: 1px dashed var(--border);
+}
+.bhc-amazon:hover { color: var(--muted); }
+
+/* NEWSLETTER BAND */
+.newsletter-band {
+  background: var(--dark-soft);
+  padding: 72px 32px;
+  text-align: center;
+}
+.newsletter-inner { max-width: 520px; margin: 0 auto; }
+.newsletter-band h2 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: bold; color: #fff; line-height: 1.2; margin-bottom: 12px;
+}
+.newsletter-band p { font-size: 15px; color: rgba(255,255,255,.5); margin-bottom: 32px; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="site-nav-brand" href="index.html"><strong>Muammar Lone</strong> — Author</a>
+  <a class="site-nav-link" href="https://www.amazon.com/s?k=Muammar+Lone&i=stripbooks" target="_blank" rel="noopener">All Books on Amazon ↗</a>
+</nav>
+
+<!-- HERO -->
+<div class="hub-hero">
+  <div class="hub-eyebrow">Published Author · Principal Genesys Cloud CX Architect</div>
+  <h1>Books for the Enterprise <em>Technology Professional</em></h1>
+  <p class="hub-hero-sub">Five published books on contact center architecture, customer experience technology, customer journey analytics, and NLP — written by a practitioner, for practitioners.</p>
+  <div class="hub-stats">
+    <div>
+      <div class="hub-stat-val">5</div>
+      <div class="hub-stat-lbl">Published Books</div>
+    </div>
+    <div>
+      <div class="hub-stat-val">3</div>
+      <div class="hub-stat-lbl">Volumes Coming</div>
+    </div>
+    <div>
+      <div class="hub-stat-val">MBA</div>
+      <div class="hub-stat-lbl">MCS · PMP®</div>
+    </div>
+    <div>
+      <div class="hub-stat-val">GE</div>
+      <div class="hub-stat-lbl">Cognizant Alumnus</div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOK GRID -->
+<section class="books-section">
+  <div class="ed-rule">
+    <div class="ed-rule-line"></div>
+    <div class="ed-rule-label">Published Books</div>
+    <div class="ed-rule-line"></div>
+  </div>
+  <div class="section-title" style="margin-top:8px;">Five Books. One Body of Work.</div>
+  <div class="section-sub">Each title is available on Amazon in Kindle, Paperback, and Hardcover formats. Download a free chapter from any brochure page.</div>
+
+  <div class="books-hub-grid">
+
+    <!-- BOOK 1 -->
+    <div class="book-hub-card">
+      <div class="bhc-accent" style="background:#006E7C;"></div>
+      <div class="bhc-body">
+        <div class="bhc-vol">Genesys Purecloud Made Simpler and Easy · Vol. 1</div>
+        <div class="bhc-title">Foundation for Customer Experience Technology Future Oriented</div>
+        <div class="bhc-desc">Strategic blueprint for digital CX transformation — governance models, value realization frameworks, and technology architecture in one guide.</div>
+      </div>
+      <div class="bhc-footer">
+        <a class="bhc-btn" style="background:#006E7C;" href="book-1-cx-foundation.html">Read Brochure →</a>
+        <a class="bhc-amazon" href="https://www.amazon.com/dp/B0DQYNVFL4" target="_blank" rel="noopener">Amazon ↗</a>
+      </div>
+    </div>
+
+    <!-- BOOK 2 -->
+    <div class="book-hub-card">
+      <div class="bhc-accent" style="background:#A85408;"></div>
+      <div class="bhc-body">
+        <div class="bhc-vol">Genesys Purecloud Made Simpler and Easy · Vol. 2</div>
+        <div class="bhc-title">Customer Experience Strategic Architecture &amp; Product Implementation Guide</div>
+        <div class="bhc-desc">Platform capabilities to enterprise outcomes — the definitive reference for architects designing scalable Genesys Cloud CX implementations.</div>
+      </div>
+      <div class="bhc-footer">
+        <a class="bhc-btn" style="background:#A85408;" href="book-2-cx-architecture.html">Read Brochure →</a>
+        <a class="bhc-amazon" href="https://www.amazon.com/Experience-Strategic-Architecture-Implementation-Purecloud/dp/B0DNWJXS2B" target="_blank" rel="noopener">Amazon ↗</a>
+      </div>
+    </div>
+
+    <!-- BOOK 3 -->
+    <div class="book-hub-card">
+      <div class="bhc-accent" style="background:#5521B5;"></div>
+      <div class="bhc-body">
+        <div class="bhc-vol">Genesys Purecloud Made Simpler and Easy · Vol. 3</div>
+        <div class="bhc-title">Genesys Purecloud Architect Guide</div>
+        <div class="bhc-desc">The practitioner's handbook for Genesys Architect — flow design, telephony architecture, security hardening, and production-grade reliability patterns.</div>
+      </div>
+      <div class="bhc-footer">
+        <a class="bhc-btn" style="background:#5521B5;" href="book-3-architect-guide.html">Read Brochure →</a>
+        <a class="bhc-amazon" href="https://www.amazon.com/Genesys-Purecloud-Architect-Guide-implementation/dp/B0DNQP9DY9" target="_blank" rel="noopener">Amazon ↗</a>
+      </div>
+    </div>
+
+    <!-- BOOK 4 -->
+    <div class="book-hub-card">
+      <div class="bhc-accent" style="background:#0891B2;"></div>
+      <div class="bhc-body">
+        <div class="bhc-vol">Genesys Purecloud Made Simpler and Easy · Vol. 4</div>
+        <div class="bhc-title">The Digital Breadcrumb Revolution — Customer Journey Analytics</div>
+        <div class="bhc-desc">Instrument, analyze, and act on the digital trail customers leave across every touchpoint — from data collection to measurable CX outcomes.</div>
+      </div>
+      <div class="bhc-footer">
+        <a class="bhc-btn" style="background:#0891B2;" href="book-4-digital-breadcrumb.html">Read Brochure →</a>
+        <a class="bhc-amazon" href="https://www.amazon.com/dp/B0DQ9FG7B4" target="_blank" rel="noopener">Amazon ↗</a>
+      </div>
+    </div>
+
+    <!-- BOOK 5 -->
+    <div class="book-hub-card">
+      <div class="bhc-accent" style="background:#7C3AED;"></div>
+      <div class="bhc-body">
+        <div class="bhc-vol">AI &amp; Language Technology</div>
+        <div class="bhc-title">Decoding Language: Principles, Applications, and Future of NLP</div>
+        <div class="bhc-desc">From tokenization to transformers to enterprise deployment — NLP demystified from first principles for technology professionals and architects.</div>
+      </div>
+      <div class="bhc-footer">
+        <a class="bhc-btn" style="background:#7C3AED;" href="book-5-decoding-language.html">Read Brochure →</a>
+        <a class="bhc-amazon" href="https://www.amazon.com/dp/B0DQSSYYYC" target="_blank" rel="noopener">Amazon ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-band">
+  <div class="newsletter-inner">
+    <h2>Stay Informed Across All Five Tracks</h2>
+    <p>Join the list to receive new chapter previews, early access to the Enterprise Contact Center Trilogy, and practitioner-grade insights direct from the author.</p>
+    <form action="https://formsubmit.co/muammarlone@gmail.com" method="POST" class="lead-form">
+      <input type="hidden" name="_subject" value="New Subscriber — Author Hub">
+      <input type="hidden" name="_next" value="https://muammarlone.github.io/book-brochures/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="source" value="Author Hub — Newsletter">
+      <input class="lead-input" type="email" name="email" placeholder="Your email address" required>
+      <button class="lead-btn" type="submit" style="color:#111C2E;">Subscribe →</button>
+    </form>
+    <p class="lead-fine" style="color:rgba(255,255,255,.35); margin-top:14px; font-size:12px; font-style:italic;">No spam. Unsubscribe any time.</p>
+  </div>
+</div>
+
+<!-- AUTHOR BIO -->
+<div style="background:var(--dark); padding: 1px 0;">
+  <div class="author-section">
+    <div class="author-avatar">✍️</div>
+    <div>
+      <div class="author-meta-name">Muammar Lone</div>
+      <div class="author-meta-title" style="color:#006E7C;">Principal Genesys Cloud CX Architect · Published Author</div>
+      <div class="author-meta-bio" style="color:rgba(255,255,255,.5);">
+        Former GE and Cognizant practitioner with deep expertise in enterprise contact center architecture, Genesys Cloud CX platform implementation, customer journey analytics, and applied AI. Author of five published books spanning the full technology stack — from platform foundations through strategic architecture to language intelligence.
+      </div>
+      <div class="author-creds" style="margin-top:16px;">
+        <span class="cred" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.4);">MBA</span>
+        <span class="cred" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.4);">MCS</span>
+        <span class="cred" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.4);">PMP®</span>
+        <span class="cred" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.4);">GE Alumni</span>
+        <span class="cred" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.4);">Cognizant Alumni</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  © 2025 Muammar Lone ·
+  <a href="https://www.amazon.com/s?k=Muammar+Lone&i=stripbooks" target="_blank" rel="noopener">Amazon Author Page</a> ·
+  <a href="https://github.com/muammarlone" target="_blank" rel="noopener">GitHub</a> ·
+  <a href="https://muammarlone.github.io/genesys-cert-guide" target="_blank" rel="noopener">Genesys Cert Guide</a>
+</footer>
+
+</body>
+</html>
